@@ -1,0 +1,36 @@
+.product-card {
+    height: 250px; /* fixed height */
+    width: 100%; /* full width */
+    min-height: 200px;
+    max-height: 300px;
+    margin-bottom: 20px;
+    display: flex; /* make it a flex container */
+    flex-direction: column; /* stack elements vertically */
+  }
+  
+  .product-card .card-body {
+    flex: 1; /* take up the remaining space */
+    padding: 10px;
+  }
+  
+  .product-card .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .card-text {
+    font-size: 14px;
+    color: #666;
+    overflow: hidden; /* hide excess text */
+    text-overflow: ellipsis; /* add ellipsis to indicate more text */
+    white-space: nowrap; /* prevent wrapping */
+  }
+  
+  .product-card img {
+    height: 100px; /* fixed image height */
+    width: 100px; /* fixed image width */
+    margin: 10px auto; /* add auto margin to center horizontally */
+    display: block; /* make it a block element */
+    object-fit: cover; /* scale image to fit */
+  }
